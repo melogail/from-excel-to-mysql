@@ -16,6 +16,7 @@ class Model:
         """
         self.db = db.DBConnection()
         self.cursor = self.db.conn.cursor()
+        self.table = self.__class__.__name__ + 's'
 
     def all(self):
         """Get all records from table"""

@@ -5,8 +5,10 @@
     ex: from models.Product import Product
         product = Product()
 """
+
 from models.Brand import Brand
+from models.Product import Product
 
-brands = Brand()
+products = Product()
 
-print(brands.all())
+print(products.all())
